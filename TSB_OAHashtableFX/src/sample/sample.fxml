@@ -1,8 +1,25 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btnNuevaTabla" layoutX="22.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnCrearTablaVaciaClic" prefHeight="25.0" prefWidth="131.0" text="Nueva Tabla" />
+      <Button fx:id="btnGuardar" disable="true" layoutX="228.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnGurdarCambiosClic" prefHeight="25.0" prefWidth="117.0" text="Guardar cambios" />
+      <Label layoutX="27.0" layoutY="95.0" text="Nombre de la Tabla:" />
+      <Label layoutX="22.0" layoutY="207.0" text="Cantidad de Personas:" />
+      <Label layoutX="360.0" layoutY="243.0" text="Frecuencia:" />
+      <Label layoutX="360.0" layoutY="95.0" text="Ingrese palabra:" />
+      <TextField fx:id="txtNom" disable="true" layoutX="22.0" layoutY="120.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="txtCant" disable="true" editable="false" layoutX="22.0" layoutY="229.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="txtFrec" editable="false" layoutX="358.0" layoutY="272.0" prefHeight="25.0" prefWidth="117.0" />
+      <TextField fx:id="txtIngrese" disable="true" layoutX="358.0" layoutY="120.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button fx:id="btnAbrirTabla" layoutX="360.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnAbrirTablaClic" prefHeight="25.0" prefWidth="131.0" text="Abrir Tabla" />
+      <Button fx:id="btnAgregarArchivo" disable="true" layoutX="21.0" layoutY="159.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="Agregar archivo" />
+      <Button fx:id="btnBuscar" disable="true" layoutX="358.0" layoutY="159.0" mnemonicParsing="false" onAction="#btnBuscarClic" prefHeight="25.0" prefWidth="117.0" text="Buscar" />
+      <Label fx:id="lbl_DatosPalabra" layoutX="360.0" layoutY="207.0" />
+   </children>
+</Pane>

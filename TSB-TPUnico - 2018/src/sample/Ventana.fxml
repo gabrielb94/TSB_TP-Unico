@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.VentanaController">
+   <children>
+      <Button fx:id="btnNueva" layoutX="41.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnNuevaAction" prefHeight="25.0" prefWidth="130.0" text="Nueva tabla" />
+      <Button fx:id="btnAbrir" layoutX="192.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnAbrirAction" prefHeight="25.0" prefWidth="130.0" text="Abrir tabla" />
+      <Button fx:id="btnAgregar" disable="true" layoutX="349.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnAgregarAction" prefHeight="25.0" prefWidth="110.0" text="Agregar archivo" />
+      <Button fx:id="btnGuardar" disable="true" layoutX="349.0" layoutY="152.0" mnemonicParsing="false" onAction="#btnGuardarAction" prefHeight="25.0" prefWidth="110.0" text="Guardar cambios" />
+      <Button fx:id="btnBuscar" disable="true" layoutX="349.0" layoutY="226.0" mnemonicParsing="false" onAction="#btnBuscarAction" prefHeight="25.0" prefWidth="110.0" text="Buscar" />
+      <Label layoutX="41.0" layoutY="102.0" text="Nombre de la tabla:" />
+      <Label layoutX="41.0" layoutY="156.0" text="Cantidad de palabras:" />
+      <Label layoutX="41.0" layoutY="230.0" text="Ingresar palabra:" />
+      <Label layoutX="41.0" layoutY="284.0" text="Frecuencia:" />
+      <TextField fx:id="txtNombreTabla" disable="true" layoutX="176.0" layoutY="98.0" />
+      <TextField fx:id="txtIngresar" disable="true" layoutX="176.0" layoutY="226.0" />
+      <Button fx:id="btnSalir" layoutX="349.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnSalirAction" prefHeight="25.0" prefWidth="110.0" text="Salir" />
+      <Label fx:id="lblCantidadPalabras" layoutX="176.0" layoutY="156.0" />
+      <Label fx:id="lblFrecuencia" disable="true" layoutX="176.0" layoutY="284.0" />
+   </children>
+</Pane>
